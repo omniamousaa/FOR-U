@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="relative bg-gradient-to-br from-pink-100 via-rose-50 to-purple-100 min-h-screen flex items-center justify-center">
+<div id="login-screen" class="bg-white/80 backdrop-blur-lg shadow-2xl rounded-3xl p-10 w-[420px] text-center">
+    <h1 class="text-4xl font-bold text-pink-600 mb-3">🎂 Birthday MOON</h1>
+    <p class="text-slate-600 mb-8">Enter the most beautiful date in the world ✨</p>
+    <div class="flex justify-center gap-4">
+      <!-- Day -->
+      <input
+        id="day"
+        type="text"
+        maxlength="2"
+        placeholder="DD"
+        class="w-20 h-20 rounded-2xl border-2 border-pink-300 text-center text-3xl font-bold outline-none focus:border-pink-500 transition"
+      >
+      <!-- Month -->
+      <input
+        id="month"
+        type="text"
+        maxlength="2"
+        placeholder="MM"
+        class="w-20 h-20 rounded-2xl border-2 border-pink-300 text-center text-3xl font-bold outline-none focus:border-pink-500 transition"
+      >
+      <!-- Year -->
+      <input
+        id="year"
+        type="text"
+        maxlength="4"
+        placeholder="YYYY"
+        class="w-28 h-20 rounded-2xl border-2 border-pink-300 text-center text-3xl font-bold outline-none focus:border-pink-500 transition"
+      >
+    </div>
+    <p id="message" class="mt-5 h-6 text-sm font-medium"></p>
+    <button
+      id="checkBtn"
+      class="mt-8 w-full bg-pink-500 hover:bg-pink-600 text-white py-3 rounded-xl text-lg font-semibold transition">
+      Unlock 🎁
+    </button>
+</div>
+<div id="img-one"><img src="images/moon/1e39893a53f8beea9eb1e3649e43c0cc-removebg-preview.png" alt="" class="absolute bottom-0 left-0 w-56"></div>
+<div id="img-two"><img src="images/moon/770316dc2233c62dbc45dd89c6a12b68-removebg-preview.png" alt="" class="absolute top-0 right-0 w-50"></div>
+<div id="loading-screen" class="hidden text-center">
+    <div class="w-24 h-24 border-8 border-pink-200 border-t-pink-600 rounded-full animate-spin mx-auto"></div>
+    <h2 class="text-4xl font-bold text-pink-600 mt-8">
+        Scanning...
+    </h2>
+    <p id="loading-text" class="text-slate-600 text-xl mt-4">
+        Preparing your surprise... 🎁
+    </p>
+</div>
+<div id="home-screen" class="hidden text-center">
+    <h1 class="text-6xl font-bold text-pink-600">Happy Birthday</h1>
+    <p class="text-5xl font-bold text-white-700 mt-6">Moon</p> 
+    <img src="images/moon/cat.png" alt="">
+</div>
+<div id="scfour" class="hidden text-center text-3xl font-bold text-pink-600 mb-4">
+    <p id="text1" class="hidden text-3xl font-bold text-pink-600 mb-4">Happy Birthday 💖</p>
+    <img src="images/moon/46c8074109a2b7135365d915cd9de085-removebg-preview.png" alt=""id="img1" class="absolute bottom-0 left-0 w-56">
+    <p id="text2" class="hidden">You are the best sister ever 🌸</p>
+    <img src="images/moon/girl.png" alt="" id="img2" class="hidden absolute top-10 right-10 w-48">
+    <p id="text3" class="hidden">I hope all your dreams come true ✨</p>
+    <img src="images/moon/cat two.png" alt="" id="img3" class="hidden absolute bottom-10 right-0 w-56">
+    <p id="text4" class="hidden">I love you so much ❤️</p>
+    <img src="images/moon/do.png" alt="" id="img4" class="hidden absolute top-20 left-10 w-52">
+</div>
+<div id="sectionfive" class="sectionfive hidden">
+    <img src="img/moonnn.png" alt="">
+</div>
+<div id="section-five" class="hidden relative w-full h-screen overflow-hidden">
+    <div id="photo1" class="hidden absolute top-8 left-8">
+        <img src="img/IMG_0567.JPG.jpeg" class="w-48 rounded-2xl shadow-xl rotate-[-6deg]">
+    </div>
+    <div id="photo2" class="hidden absolute top-12 left-[24%]">
+        <img src="img/IMG_0436.JPG.jpeg"class="w-40 rounded-2xl shadow-xl rotate-[5deg]">
+        <p class="mt-2 text-center font-bold text-fuchsia-600">ona❤️</p>
+    </div>
+    <div id="photo3" class="hidden absolute top-4 left-1/2 -translate-x-1/2">
+        <img src="img/IMG_6134.PNG" class="w-44 rounded-2xl shadow-xl rotate-[-8deg]">
+    </div>
+    <div id="photo4" class="hidden absolute top-10 right-[24%]">
+        <img src="img/IMG_0763.JPG.jpeg" class="w-40 rounded-2xl shadow-xl rotate-[8deg]">
+        <p class="mt-2 text-center font-bold text-purple-500">Sweet memories 💕</p>
+    </div>
+    <div id="photo5" class="hidden absolute top-8 right-8">
+        <img src="img/IMG_0800.JPG.jpeg" class="w-48 rounded-2xl shadow-xl rotate-[-5deg]">
+        <p class="mt-2 text-center font-bold text-pink-600">Forever ❤️</p>
+    </div>
+    <div id="photo6" class="hidden absolute top-[34%] left-[10%]">
+        <img src="img/IMG_4986.JPG.jpeg" class="w-44 rounded-2xl shadow-xl rotate-[10deg]">
+        <p class="mt-2 text-center font-bold text-rose-500">Lovely 💗</p>
+    </div>
+    <div id="photo7" class="hidden absolute top-[38%] left-[34%]">
+        <img src="img/IMG_0839.JPG.jpeg" class="w-52 rounded-2xl shadow-xl rotate-[-7deg]">
+        <p class="mt-2 text-center font-bold text-fuchsia-600">❤️</p>
+    </div>
+    <div id="photo8" class="hidden absolute top-[34%] right-[34%]">
+        <img src="img/IMG_0975.JPG.jpeg"  class="w-44 rounded-2xl shadow-xl rotate-[6deg]">
+    </div>
+    <div id="photo9" class="hidden absolute top-[36%] right-[8%]">
+        <img src="img/IMG_1361.PNG" class="w-48 rounded-2xl shadow-xl rotate-[-10deg]">
+        <p class="mt-2 text-center font-bold text-pink-600">My favorite 🌼</p>
+    </div>
+    <div id="photo10" class="hidden absolute bottom-24 left-8">
+        <img src="img/IMG_2407.PNG" class="w-44 rounded-2xl shadow-xl rotate-[7deg]">
+        <p class="mt-2 text-center font-bold text-rose-600">Love you 🌹</p>
+    </div>
+    <div id="photo11" class="hidden absolute bottom-12 left-[25%]">
+        <img src="img/IMG_9727.JPG.jpeg" class="w-52 rounded-2xl shadow-xl rotate-[-4deg]">
+        <p class="mt-2 text-center font-bold text-pink-500">Always together 🤍</p>
+    </div>
+    <div id="photo12" class="hidden absolute bottom-8 left-1/2 -translate-x-1/2">
+        <img src="img/IMG_9417.JPG.jpeg" class="w-40 rounded-2xl shadow-xl rotate-[9deg]">
+        <p class="mt-2 text-center font-bold text-fuchsia-600">alpopyyy❤️</p>
+    </div>
+    <div id="photo13" class="hidden absolute bottom-16 right-[25%]">
+        <img src="img/IMG_7498.JPG.jpeg" class="w-48 rounded-2xl shadow-xl rotate-[-6deg]">
+        <p class="mt-2 text-center font-bold text-purple-500">Best sister 💖</p>
+    </div>
+    <div id="photo14" class="hidden absolute bottom-24 right-[8%]">
+        <img src="img/IMG_4345.JPG.jpeg" class="w-40 rounded-2xl shadow-xl rotate-[5deg]">
+        <p class="mt-2 text-center font-bold text-pink-600">Happy Birthday Moon 🎉</p>
+    </div>
+</div>
+<div id="last-section" class="hidden text-center">
+    <img src="images/moon/end.png"class="absolute top-10 left-10 w-64">
+    <img src="images/moon/moon2.png"class="absolute bottom-10 right-10 w-64">
+    <p id="msg1" class="text-4xl font-bold text-pink-600">
+        Happy Birthday My Moon 💖</p>
+    <p id="msg2" class="hidden text-4xl font-bold text-pink-600">
+        Thank you for everything 🌸</p>
+    <p id="msg3" class="hidden text-4xl font-bold text-pink-600">
+        I will always love you forever ❤️</p>
+        <p id="msg4" class="hidden text-4xl font-bold text-pink-600">
+        made by love to my love ❤️</p>
+        <p id="msg5" class="hidden text-4xl font-bold text-pink-600">
+        بحبك يا اونه ❤️</p>
+</div>
+<!-- <div id="last-section" class="hidden text-center">
+
+    <img id="last-img1"
+        src="images/moon/end.png"
+        class="w-80 rounded-3xl mx-auto shadow-xl">
+
+    <img id="last-img2"
+        src="images/moon/moon2.png"
+        class="hidden w-80 rounded-3xl mx-auto shadow-xl">
+
+    <p id="msg1" class="mt-6 text-4xl font-bold text-pink-600">
+        Happy Birthday My Moon 💖
+    </p>
+
+    <p id="msg2" class="hidden mt-6 text-4xl font-bold text-pink-600">
+        Thank you for every beautiful memory 🌸
+    </p>
+
+    <p id="msg3" class="hidden mt-6 text-4xl font-bold text-pink-600">
+        I will always love you ❤️
+    </p>
+
+</div> -->
+    <script src="js/main.js"></script>
+</body>
+</html>
