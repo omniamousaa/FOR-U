@@ -14,7 +14,7 @@ checkBtn.addEventListener("click", function () {
     if (
     day.value === "15" &&
     month.value === "07" &&
-    year.value === "1999"
+    year.value === "1998"
 ) {
     loginScreen.classList.add("hidden");
     imgOne.classList.add("hidden");
